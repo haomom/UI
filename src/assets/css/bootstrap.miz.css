@@ -1,0 +1,540 @@
+body {
+    font-family: "Arial";
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar-banner {
+    color: white;
+    background-color: #140078;
+    background-image:url('../static/images/mizuho/brand_eng_left.jpg');
+    background-position:left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar-banner-label {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar-default {
+  /* display properties for all scenarios */
+  background-color: #5096c8;
+  border-color: #5096c8;
+  border-radius: 0;
+
+  /* size properties for the default scenario (large screen) - these values are overwritten by media query below for smaller screens */
+  min-height: 30px;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #140078;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > nav > a {
+  color: #ecf0f1;
+  padding-top: 0; padding-bottom: 0; line-height: 30px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > nav > a:hover, .navbar-default .navbar-nav > li > nav > a:focus {
+  color: #140078;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #5096c8;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #140078;
+  background-color: #5096c8;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #5096c8;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #140078;
+  background-color: #5096c8;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #140078;
+  background-color: #5096c8;
+}
+.navbar-default .navbar-toggle {
+  border-color: #5096c8;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #5096c8;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #140078;
+}
+
+
+
+@media (max-width: 767px) {
+
+    /* hide the application banner for smaller screens */
+    .navbar-banner {
+        display: none;
+    }
+
+  .navbar-default {
+    /* override default size for smaller screens - go back to the bootstrap default which allows the menu to expand correctly */
+    min-height:inherit;
+    height: inherit;
+    /* switch off the OneMizuho logo */
+    background-image: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #140078;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #140078;
+    background-color: #5096c8;
+  }
+}
+
+
+.control-label {
+    color: #5096c8;
+}
+
+/* MIZUHO Colours
+
+    --- Brand Colours ---
+    -- Mizuho Cosmic Blue --
+    rgb(20, 0, 120);
+    -- Mizuho Horizon Red --
+    rgb(252, 0, 25);
+    -- Grey 1 --
+    rgb(90, 90, 90);
+    -- Grey 2 --
+    rgb(102, 102, 102);
+
+    -- Dark Brick --
+    rgb(205, 20, 0);
+    -- Brick --
+    rgb(255, 70, 45);
+    -- Brick 60% --
+    rgb(236, 131, 112);
+    -- Brick 30% --
+    rgb(245, 192, 176);
+
+    -- Dark Orange --
+    rgb(205, 90, 5);
+    -- Orange --
+    rgb(215, 120, 30);
+    -- Orange 60% --
+    rgb(230, 173, 106);
+    -- Orange 30% --
+    rgb(243, 214, 175);
+
+    -- Dark Yellow --
+    rgb(215, 165, 5);
+    -- Yellow --
+    rgb(240, 190, 45);
+    -- Yellow 60% --
+    rgb(246, 214, 123);
+    -- Yellow 30% --
+    rgb(250, 235, 186);
+
+    -- Dark Leaf --
+    rgb(50, 130, 35);
+    -- Leaf --
+    rgb(100, 170, 65);
+    -- Leaf 60% --
+    rgb(163, 204, 128);
+    -- Leaf 30% --
+    rgb(209, 229, 186);
+
+    -- Dark Green --
+    rgb(50, 115, 60);
+    -- Green --
+    rgb(50, 150, 100);
+    -- Green 60% --
+    rgb(134, 194, 163);
+    -- Green 30% --
+    rgb(194, 224, 204);
+
+    -- Dark Peacock --
+    rgb(30, 90, 110);
+    -- Peacock --
+    rgb(50, 140, 145);
+    -- Peacock 60%--
+    rgb(134, 182, 181);
+    -- Peacock 30%--
+    rgb(194, 218, 215);
+
+    -- Dark Sky --
+    rgb(10, 80, 160);
+    -- Sky --
+    rgb(80, 150, 200);
+    -- Sky 60% --
+    rgb(148, 189, 218);
+    -- Sky 30% --
+    rgb(201, 221, 236);
+
+    -- Dark Royal --
+    rgb(40, 50, 150);
+    -- Royal --
+    rgb(105, 120, 180);
+    -- Royal 60% --
+    rgb(163, 169, 208);
+    -- Royal 30% --
+    rgb(208, 209, 230);
+
+    -- Dark Purple --
+    rgb(85, 20, 135);
+    -- Purple --
+    rgb(130, 90, 170);
+    -- Purple 60% --
+    rgb(178, 146, 198);
+    -- Purple 30% --
+    rgb(215, 198, 225);
+
+    -- Dark Wine --
+    rgb(130, 0, 60);
+    -- Wine --
+    rgb(180, 45, 90);
+    -- Wine 60% --
+    rgb(206, 125, 144);
+    -- Wine 30% --
+    rgb(230, 188, 194);
+*/
+/* Progress bars */
+.progress-bar {
+    background-color: rgb(10, 80, 160);
+}
+.progress-bar-success {
+    background-color: rgb(100, 170, 65);
+}
+.progress-bar-info {
+    background-color: rgb(80, 150, 200);
+}
+.progress-bar-warning {
+    background-color: rgb(215, 120, 30);
+}
+.progress-bar-danger {
+    background-color: rgb(225, 70, 45);
+}
+/* Labels */
+.label-default {
+    background-color: rgb(90, 90, 90);
+}
+.label-primary {
+    background-color: rgb(10, 80, 160);
+}
+.label-success {
+    background-color: rgb(50, 115, 60);
+}
+.label-info {
+    background-color: rgb(80, 150, 200);
+}
+.label-warning {
+    background-color: rgb(205, 90, 5);
+}
+.label-danger {
+    background-color: rgb(205, 20, 0);
+}
+
+/* Alerts */
+.alert-info {
+    background-color: rgb(201, 221, 236); /* Sky 30% */
+    border-color: rgb(148, 189, 218); /* Sky 60% */
+    color: #333;
+}
+.alert-warning {
+    background-color: rgb(250, 235, 186); /* Yellow 30% */
+    border-color: rgb(246, 214, 123); /* Yellow 60% */
+    color: #333;
+}
+.alert-danger {
+    background-color: rgb(230, 188, 194); /* Wine 30% */
+    border-color: rgb(206, 125, 144); /* Wine 60% */
+    color: #333;
+}
+.alert-success {
+    background-color: rgb(194, 224, 204); /* Green 30% */
+    border-color: rgb(134, 194, 163); /* Green 60% */
+    color: #333;
+}
+
+/* Contextual Colour */
+.text-muted {
+    color: rgb(90, 90, 90); /* Grey 1 */
+}
+.text-primary {
+    color:  rgb(80, 150, 200); /* Sky */
+}
+.text-success {
+    color: rgb(50, 150, 100); /* Green */
+}
+.text-info {
+    color: rgb(105, 120, 180);  /* royal */
+}
+.text-warning {
+    color: rgb(215, 120, 30); /* orange */
+}
+.text-danger {
+    color: rgb(225, 70, 45); /* Brick */
+}
+
+/* Contextuak Background */
+.bg-muted {
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+}
+.bg-primary {
+    background-color: rgb(80, 150, 200);
+}
+.bg-success {
+    background-color: rgb(194, 224, 204);
+}
+.bg-info {
+    background-color: rgb(201, 221, 236);
+}
+.bg-warning {
+    background-color: rgb(250, 235, 186);
+}
+.bg-danger {
+    background-color: rgb(230, 188, 194);
+}
+
+/* Buttons */
+.btn.btn-default:hover,
+.btn.btn-default.active {
+    color: rgb(90, 90, 90); /* Gray 1 */
+    border-color: rgb(0, 0, 0); /* Black */
+}
+.btn.btn-default,
+.btn.btn-default.disabled,
+.btn.btn-default.disabled:hover {
+    color: rgb(102, 102, 102); /* Gray 2 */
+    border-color: rgb(90, 90, 90); /* Gray 1 */
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 150, 200); /* sky */
+    border-color: rgb(10, 80, 160); /* Sky Dark */
+}
+.btn.btn-primary,
+.btn.btn-primary.disabled,
+.btn.btn-primary.disabled:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(148, 189, 218); /* sky 60% */
+    border-color: rgb(80, 150, 200); /* sky */
+}
+
+.btn.btn-success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(163, 204, 128); /* Leaf 60% */
+    border-color: rgb(100, 170, 65) /* Leaf */
+}
+.btn.btn-success:hover,
+.btn.btn-success.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 170, 65); /* Leaf */
+    border-color: rgb(50, 130, 35); /* dark leaf */
+}
+
+.btn.btn-info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(163, 169, 208);  /* royal 60% */
+    border-color: rgb(105, 120, 180);  /* royal */
+}
+.btn.btn-info:hover,
+.btn.btn-info.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(105, 120, 180);  /* royal */
+    border-color:rgb(40, 50, 150);  /* dark royal */
+}
+
+.btn.btn-warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 173, 106); /* Orange 60% */
+    border-color: rgb(215, 120, 30) /* Orange */
+}
+.btn.btn-warning:hover,
+.btn.btn-warning.active {
+    color:  rgb(255, 255, 255);
+    background-color: rgb(215, 120, 30); /* orange */
+    border-color: rgb(205, 90, 5); /* dark orange */
+}
+
+.btn.btn-danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 131, 112); /* Brick 60% */
+    border-color: rgb(225, 70, 45); /* Brick */
+}
+.btn.btn-danger:hover,
+.btn.btn-danger.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(225, 70, 45); /* Brick */
+    border-color: rgb(205, 20, 0); /* Dark Brick */
+}
+
+/* Default the selected row in a table to sky 30 */
+table tbody tr.selected,
+table.dataTable tbody tr.selected {
+    background-color: rgb(201, 221, 236); /* Sky 30% */
+}
+
+.copyright
+{
+    padding-top: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(80, 150, 200);
+    text-align: center;
+    color: rgb(255, 255, 225);
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+body:last-child
+{
+    margin-bottom: 34px;
+}
+
+.panel-default {
+  border-color: #dddddd;
+}
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #dddddd;
+}
+.panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333333;
+}
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #dddddd;
+}
+.panel-primary {
+    border-color: rgb(80, 150, 200);
+}
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: rgb(80, 150, 200);
+  border-color:rgb(80, 150, 200);
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: rgb(80, 150, 200);
+}
+.panel-primary > .panel-heading .badge {
+  color:rgb(80, 150, 200);
+  background-color: #ffffff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: rgb(80, 150, 200);
+}
+.panel-success {
+  border-color: #d6e9c6;
+}
+.panel-success > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+.panel-success > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+.panel-info {
+  border-color: #bce8f1;
+}
+.panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+.panel-info > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+.panel-warning {
+  border-color: #faebcc;
+}
+.panel-warning > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+.panel-warning > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+.panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+.panel-danger {
+  border-color: #ebccd1;
+}
+.panel-danger > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+.panel-danger > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
+}
