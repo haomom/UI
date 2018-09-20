@@ -1,0 +1,35 @@
+<kendo-dialog title="Edit your credentials" *ngIf="showDialog" (close)="cancel()" [minWidth]="250" [width]="500">
+  
+  <div>
+    <label for="branch">Branch</label>
+    <kendo-dropdownlist id="branch" [data]="branches" [value]="selectedRow.Branch">
+    </kendo-dropdownlist>
+  </div>
+  
+  <div>
+    <label for="g-user-id">G-BASE User Id</label>
+    <kendo-textbox-container id="g-user-id">
+      <input kendoTextBox [(ngModel)]="selectedRow.GBaseUserId"/>
+    </kendo-textbox-container>
+  </div>
+
+  <div>
+    <label for="g-emp-id">G-BASE Employee Id</label>
+    <kendo-textbox-container id="g-emp-id">
+      <input kendoTextBox [(ngModel)]="selectedRow.GBaseEmployeeId"/>
+    </kendo-textbox-container>
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <kendo-textbox-container id="password">
+      <input kendoTextBox type="password" [(ngModel)]="selectedRow.Password" />
+    </kendo-textbox-container>
+  </div>
+
+  <kendo-dialog-actions>
+      <button kendoButton (click)="delete()">Delete</button>
+      <button kendoButton (click)="cancel()">Cancel</button>
+      <button kendoButton (click)="save()" [primary]="true">Save</button>
+  </kendo-dialog-actions>
+</kendo-dialog>

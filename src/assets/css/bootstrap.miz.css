@@ -42,11 +42,11 @@ body {
 .navbar-default .navbar-text {
   color: #ecf0f1;
 }
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > nav > a {
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li nav a {
   color: #ecf0f1;
   padding-top: 0; padding-bottom: 0; line-height: 30px;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > nav > a:hover, .navbar-default .navbar-nav > li > nav > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li nav a:hover, .navbar-default .navbar-nav > li nav a:focus {
   color: #140078;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {

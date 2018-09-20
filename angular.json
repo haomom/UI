@@ -20,14 +20,17 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/environments/environment.dev.values.js",
+              "src/environments/environment.uat.values.js",
+              "src/environments/environment.production.values.js"
             ],
             "styles": [
               "src/styles.css",
               "src/assets/css/bootstrap.miz.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@progress/kendo-theme-bootstrap/dist/all.css",
-              "src/assets/static/font-awesome/4.5.0/css/font-awesome.min.css",
+              "src/assets/static/font-awesome/4.5.0/css/font-awesome.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",

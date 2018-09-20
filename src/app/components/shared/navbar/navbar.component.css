@@ -1,0 +1,8 @@
+ul.navbar-nav {
+  display: inline-block;
+
+  li {
+    color:: #ecf0f1;
+    display: inline-block;
+  }
+}

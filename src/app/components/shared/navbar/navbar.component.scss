@@ -1,0 +1,30 @@
+.navbar {
+  padding: .2rem 1rem;
+
+  ul.navbar-nav {
+    font-size: 14px;
+    display: inline-block;
+
+    .dropdown-menu {
+      position: absolute;
+      left: auto;
+
+      .dropdown-item:active {
+        background-color: #f8f9fa;
+      }
+    }
+
+    li {
+      color: #ecf0f1;
+      display: inline-block;
+
+      &:not(:first-child) {
+        padding-left: 30px;
+      }
+
+      i {
+        padding-right: 8px;
+      }
+    }
+  }
+}

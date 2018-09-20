@@ -1,0 +1,51 @@
+<kendo-dialog *ngIf="showDialog" (close)="cancel()" [minWidth]="250" [width]="450">
+  
+  <div>
+    <label for="branch">Branch</label>
+    <kendo-textbox-container id="branch">
+      <input kendoTextBox disabled [value]="selectedRow.Branch" />
+    </kendo-textbox-container>
+  </div>
+  
+  <div>
+    <label for="username">User name</label>
+    <kendo-textbox-container id="username">
+      <input kendoTextBox disabled [value]="selectedRow.Username" />
+    </kendo-textbox-container>
+  </div>
+
+  <div>
+    <label for="g-user-id">G-BASE User Id</label>
+    <kendo-textbox-container id="g-user-id">
+      <input kendoTextBox disabled [value]="selectedRow.GBaseUserId" />
+    </kendo-textbox-container>
+  </div>
+
+  <div>
+    <label for="g-emp-id">G-BASE Employee Id</label>
+    <kendo-textbox-container id="g-emp-id">
+      <input kendoTextBox disabled [value]="selectedRow.GBaseEmployeeId" />
+    </kendo-textbox-container>
+  </div>
+
+  <div class="credentials-test-container">
+    <div class="credentials-test">
+      <span>Password Stored</span>
+      <span class="k-i-loading k-icon"></span>
+    </div>
+
+    <div class="credentials-test">
+      <span>G-BASE Connected</span>
+      <span class="k-i-loading k-icon"></span>
+    </div>
+
+    <div class="credentials-test">
+      <span>Password Valid</span>
+      <span class="k-i-loading k-icon"></span>
+    </div>
+  </div>
+
+  <kendo-dialog-actions>
+      <button kendoButton (click)="cancel()">Close</button>
+  </kendo-dialog-actions>
+</kendo-dialog>
